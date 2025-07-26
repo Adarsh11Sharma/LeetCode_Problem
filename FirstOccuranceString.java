@@ -13,7 +13,7 @@ class FirstOccuranceString {
 
         for (int i = 0; i <= hayLen - neeLen; i++) {
             if (haystack.charAt(i) == needle.charAt(0)) {
-                if (haystack.regionMatches(i, needle, 0, neeLen)) {
+                if (haystack.substring(i, i+neeLen) .equals(needle)){
                     return i;
                 }
             }
