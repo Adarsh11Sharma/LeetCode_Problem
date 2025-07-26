@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 
 
 
@@ -19,8 +21,9 @@ class FirstOccuranceString {
         return -1;
     }
     public static void main(String[] args) {
-        String haystack= "LEETCODE";
-        String needle= "abc";
+        Scanner sc=new Scanner(System.in);
+        String haystack= sc.nextLine();
+        String needle= sc.nextLine();
 
          FirstOccuranceString finder = new FirstOccuranceString(); // create object
         int n = finder.strStr(haystack, needle); 
